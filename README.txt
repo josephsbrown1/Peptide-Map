@@ -1,10 +1,8 @@
-Hello! Thank you for your interest in this work. We hope you find it valuable. Here are descriptions of what you will find in this repository.
-
+Hello! Thank you for your interest in this work. We hope you find it valuable. Here are descriptions of what you will find in this repository. See the requirements.txt for the required Python modules. Instructions:
 
 If you only have a list of peptide sequences without other information, it is still recommended to use '0 Data Curation Step 1- Filter by Library Design' before moving onto 3 Make Map by Dim Reduction. Otherwise, the resulting sequence space map may just separate your peptides based on library design.
 
-
-========== Folders:
+========== All data from our publication is here in this repository in these folders:
 -------	1 Data Curation Step 1- Filter by Library Design
 	This jupyter notebook will filter your list of peptides by regular expressions to isolate peptides that fit a specific design (e.g., X12K). It is highly recommended to use this even if you only have a list of peptides, and just skip the last filtering step. Otherwise, you may end up with sequence space map that just separates your peptides based on library design
 
@@ -24,3 +22,11 @@ If you only have a list of peptide sequences without other information, it is st
 
 -------	Extra Pieces
 	Herein is a dedicated logo plot script prepared using Logomaker.
+
+This repository uses Jupyter 6.4.8 (Python 3.9.12), but see the requirements.txt for all module specific details. 
+Also, additional details are provided for specialized modules at the beginning of each notebook. 
+Installation of all modules including a fresh install of anaconda should take <1 hour if not <10 minutes. 
+
+Please follow the annotate Jupyter notebook for further instructions of how to use this code. Any laptop can run this code in <1 hour, and the expected output is shown in the notebook
+
+Note about reproducibility: PCA is deterministic and will always produce the same output. However, UMAP is stochastic and varies slightly from computer to computer. To limit this variation, use the data provided, which has been randomized once) and keep the random seed set.
