@@ -3,5 +3,4 @@ matplotlib==3.5.1
 numpy==1.21
 scikit_learn==1.2.2
 XlsxWriter==3.0.3
-setuptools==61.2.0
 umap_learn==0.5.3
